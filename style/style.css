@@ -1,0 +1,89 @@
+:root{
+    --font: "Inter", sans-serif;
+    --font-regular: 400;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey700: hsl(0, 0%, 20%);
+    --color-grey800: hsl(0, 0%, 12%);
+    --color-grey900: hsl(0, 0%, 8%);
+}
+
+html {
+    font-size: 14px;
+}
+body{
+    font-family: var(--font);
+    background-color: var(--color-grey900);
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-grey800);
+    text-align: center;
+    width: auto;
+    border-radius: 12px;
+}
+.buttons{
+    padding-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+button{
+    border-radius: 8px;
+    margin: 0;
+    border: none;
+
+    color: var(--color-white);
+    background-color: var(--color-grey700);
+    font-weight: var(--font-semibold);
+    letter-spacing: 5%;
+    font-size: 0.9rem;
+    width: 22rem;
+    height: 3.2rem;
+}
+button:hover{
+    color: var(--color-grey700);
+    background-color: var(--color-green);
+}
+h1{
+    margin: 0;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: var(--font-regular);
+    padding-top: 1.5rem;
+}
+h2{
+    margin: 0;
+    color: var(--color-green);
+    font-size: 0.9rem;
+    font-weight: var(--font-semibold);
+    padding-top: 0.6rem;
+}
+h3{
+    margin: 0;
+    color: var(--color-white);
+    font-weight: var(--font-regular);
+    font-size: 0.85rem;
+
+    padding-top: 1.8rem;
+}
+
+img{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    display: block;
+}
